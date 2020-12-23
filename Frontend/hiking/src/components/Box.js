@@ -1,4 +1,4 @@
-import { Box, Badge, Image, Button } from "@chakra-ui/react";
+import { Box, Badge, Image, Link } from "@chakra-ui/react";
 import { StarIcon } from "@chakra-ui/icons";
 
 function Databox() {
@@ -9,13 +9,19 @@ function Databox() {
     baths: 2,
     title: "Modern home in city center in the heart of historic Los Angeles",
     formattedPrice: "$950.00",
-    reviewCount: 34,
+    reviewCount: Math.floor(Math.random() * 34),
     rating: Math.random()*5,
   }
   return (
-    <Box as="button" to="#" maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden">
-      <Image src={property.imageUrl} alt={property.imageAlt} />
     
+    
+      
+
+    <Box _hover={{ boxShadow: "dark-lg" }} maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden">
+      <Link href="https://chakra-ui.com" >
+        <Image src={property.imageUrl} alt={property.imageAlt} />
+      </Link>
+
     <Box p="6">
       <Box d="flex" alignItems="baseline">
           <Badge borderRadius="full" px="2" colorScheme="teal">
@@ -68,8 +74,8 @@ function Databox() {
 
     </Box>
       
-
     </Box>
+
   )
 }
 

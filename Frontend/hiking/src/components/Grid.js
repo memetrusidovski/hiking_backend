@@ -1,22 +1,19 @@
 import { Container, Row, Col } from "react-bootstrap";
+import { Flex, Center, Wrap, WrapItem } from "@chakra-ui/react";
 import Databox from "./Box";
 
 const Gridlayout = () => {
     return(
-        <Container fluid="true">
-            <Row>
-            {Array(5)
+        <Wrap>
+              
+            {Array(50)
             .fill("")
             .map((_, i) => (
-                <Col>
-                    <Databox/>
-                    <Databox/>
-                    <Databox/>
-                    <Databox/>
-                </Col>
+                <WrapItem >
+                        <Databox/>
+                </WrapItem>
                 ))}
-            </Row>
-        </Container>
+        </Wrap>
     )
 }
 
