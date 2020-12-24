@@ -1,0 +1,1 @@
+alter table trails add column description varchar(300) null;
