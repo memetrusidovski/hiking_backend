@@ -12,10 +12,13 @@ public class Trail {
 
     private String description;
     private String imageURL;
-
-
     private String imageAlt;
+
+    private String difficulty;
     private Integer rating;
+    private String length;
+    private Integer dogFriendly;
+
 
     private Integer open;
     private Integer close;
