@@ -12,9 +12,9 @@ public class exampleController {
         return "<h1>Hello Tester</h1>";
     }
 
-    @GetMapping("/user")
+    @RequestMapping("/user")
     public String user(){
-        return ("<h1>Welcome User</h1>");
+        return "<h1>Welcome User</h1>";
     }
 
     @GetMapping("/admin")

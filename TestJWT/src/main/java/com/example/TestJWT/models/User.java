@@ -3,11 +3,12 @@ package com.example.TestJWT.models;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "User")
+@Table(name = "\"User\"")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
+    @Column(name="username")
     private String userName;
     private String password;
     private boolean active;

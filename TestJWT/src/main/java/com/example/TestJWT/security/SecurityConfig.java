@@ -19,12 +19,17 @@ import javax.sql.DataSource;
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
-    UserDetailsService userDetailsService;
+    private UserDetailsService userDetailsService;
 
     /* This file allows for the changing of security auth properties */
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(userDetailsService);
+        //System.out.println(userDetailsService);
+        /*auth.inMemoryAuthentication()
+        .withUser("test")
+        .password("test")
+        .roles("ADMIN");*/
     }
 
     @Bean
