@@ -40,7 +40,8 @@ public class Trail {
         if (reviews == null){
             reviews = new ArrayList<>();
         }
-        reviews.add(tempReview);
+
+        reviews.add(0, tempReview);
         tempReview.setTrail(this);
     }
     public List<Review> getReviews() {

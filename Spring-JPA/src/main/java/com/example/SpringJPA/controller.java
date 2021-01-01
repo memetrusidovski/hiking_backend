@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 @RestController
 public class controller {
@@ -43,8 +44,9 @@ public class controller {
 
     @RequestMapping("/newreview/{name}")
     @PutMapping
-    public int setReview(@RequestBody Review review, @PathVariable("name") String name){
-        test.addReviewToTrail(name, "anyone", review.getTitle(), review.getDescription());
+    public int setReview(@RequestBody Review review, @PathVariable("name") String  name){
+
+        test.addReviewToTrail(UUID.fromString( name ) , "anyone", review.getTitle(), review.getDescription());
         return 1;
     }
 }

@@ -34,10 +34,10 @@ public class testService {
 
         return 1;
     }
-    public int addReviewToTrail(String search, String user, String title, String description){
+    public int addReviewToTrail(UUID search, String user, String title, String description){
         Review temp = new Review(user, title, description);
         //Optional<Trail> trail = trailRepository..findById(search);
-        Trail trail = trailRepository.findAll().iterator().next();
+        Trail trail = trailRepository.findById(search).get();
 
         System.out.println(temp.getTitle() +"<++++++");
 

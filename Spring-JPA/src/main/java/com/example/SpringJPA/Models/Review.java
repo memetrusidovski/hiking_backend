@@ -27,6 +27,8 @@ public class Review {
         this.trail = trail;
     }
 
+    public Review(){}
+
     public Review( String user, String title, String description) {
         this.username = user;
         this.title = title;
