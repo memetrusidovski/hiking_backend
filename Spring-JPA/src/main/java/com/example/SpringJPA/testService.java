@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
 
 @Service
@@ -15,6 +14,9 @@ public class testService {
 
     @Autowired
     private TrailRepository trailRepository;
+
+    @Autowired
+    private ReviewRepository reviewRepository;
 
     public List<Trail> getAllTrails(){
         List<Trail> t = new ArrayList<>();
@@ -36,8 +38,11 @@ public class testService {
         Review temp = new Review(user, title, description);
         //Optional<Trail> trail = trailRepository..findById(search);
         Trail trail = trailRepository.findAll().iterator().next();
+
         System.out.println(temp.getTitle() +"<++++++");
+
         trail.add(temp);
+        reviewRepository.save( trail.getReviews().get(0) );
 
         System.out.println(trail.getReviews().get(0).getTitle() + "<------");
         return 1;
