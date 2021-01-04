@@ -12,7 +12,7 @@ import java.util.UUID;
 //App is working with. The second is the type of the id.
 public interface TrailRepository extends CrudRepository<Trail, UUID> {
     String findByName(String name);
-    //Page<Trail> findByRating(Integer rating, Pageable page);
-    Slice<Trail> findByRating(Integer rating, Pageable page);
+    Page<Trail> findByRatingGreaterThan(Integer rating, Pageable page);
+    //Slice<Trail> findByRating(Integer rating, Pageable page);
 
 }

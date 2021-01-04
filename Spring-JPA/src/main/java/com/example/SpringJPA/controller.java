@@ -35,11 +35,18 @@ public class controller {
         return s;
     }
 
+
     @RequestMapping("/newtrail")
     @PutMapping
     public int setUpdate(@RequestBody Trail trail){
         test.addTrail(trail.getName(), trail.getDescription());
         return 1;
+    }
+
+    @RequestMapping("/page")
+    @PutMapping
+    public List<Trail> page(@RequestBody Trail trail){
+        return test.pageOfData();
     }
 
     @RequestMapping("/newreview/{name}")
