@@ -1,6 +1,8 @@
 package com.example.SpringJPA.Models;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 
 @Entity
@@ -17,6 +19,7 @@ public class Review {
 
     @ManyToOne
     @JoinColumn(name="trail_id")
+    @JsonIgnore
     private Trail trail;
 
     public Trail getTrail() {
