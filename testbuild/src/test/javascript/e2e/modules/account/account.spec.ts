@@ -72,8 +72,7 @@ describe('Account', () => {
     expect(await registerPage.getTitle()).to.eq(registerPageTitle);
 
     await registerPage.autoSignUpUsing('user_test', 'admin@localhost.jh', 'user_test');
-
-    const toast = getToastByInnerText('<strong>Registration saved!</strong> Please check your email for confirmation.');
+    const toast = getToastByInnerText('Registration saved! Please check your email for confirmation.');
     await waitUntilDisplayed(toast);
 
     // Success toast should appear
@@ -171,8 +170,7 @@ describe('Account', () => {
     expect(await passwordPage.getTitle()).to.eq(passwordPageTitle);
 
     await passwordPage.autoChangePassword('bad_password', 'new_password', 'new_password');
-
-    const toast = getToastByInnerText('<strong>An error has occurred!</strong> The password could not be changed.');
+    const toast = getToastByInnerText('An error has occurred! The password could not be changed.');
     await waitUntilDisplayed(toast);
 
     // Error toast should appear
@@ -185,8 +183,7 @@ describe('Account', () => {
     expect(await passwordPage.getTitle()).to.eq(passwordPageTitle);
 
     await passwordPage.autoChangePassword('admin', 'new_password', 'new_password');
-
-    const toast = getToastByInnerText('<strong>Password changed!</strong>');
+    const toast = getToastByInnerText('Password changed!');
     await waitUntilDisplayed(toast);
 
     // Success toast should appear

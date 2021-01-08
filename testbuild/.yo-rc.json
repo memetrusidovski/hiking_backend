@@ -5,17 +5,17 @@
     },
     "jhipsterVersion": "6.1.2",
     "applicationType": "monolith",
-    "baseName": "testbuild",
-    "packageName": "com.test.build",
-    "packageFolder": "com/test/build",
+    "baseName": "blog",
+    "packageName": "com.jhipster.demo.blog",
+    "packageFolder": "com/jhipster/demo/blog",
     "serverPort": "8080",
     "authenticationType": "jwt",
-    "cacheProvider": "ehcache",
+    "cacheProvider": "hazelcast",
     "enableHibernateCache": true,
     "websocket": false,
     "databaseType": "sql",
     "devDatabaseType": "h2Disk",
-    "prodDatabaseType": "postgresql",
+    "prodDatabaseType": "mysql",
     "searchEngine": false,
     "messageBroker": false,
     "serviceDiscoveryType": false,
@@ -32,6 +32,12 @@
     "entitySuffix": "",
     "dtoSuffix": "DTO",
     "otherModules": [],
-    "enableTranslation": false
-  }
+    "enableTranslation": true,
+    "languages": ["en", "fr"],
+    "nativeLanguage": "en",
+    "skipClient": false,
+    "skipServer": false,
+    "skipUserManagement": false
+  },
+  "entities": ["Blog", "Post", "Tag"]
 }

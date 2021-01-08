@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-
+import { Translate } from 'react-jhipster';
 import { Table, Badge, Col, Row, Button } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -61,7 +61,10 @@ export class HealthPage extends React.Component<IHealthPageProps, IHealthPageSta
         <p>
           <Button onClick={this.getSystemHealth} color={isFetching ? 'btn btn-danger' : 'btn btn-primary'} disabled={isFetching}>
             <FontAwesomeIcon icon="sync" />
-            &nbsp; Refresh
+            &nbsp;
+            <Translate component="span" contentKey="health.refresh.button">
+              Refresh
+            </Translate>
           </Button>
         </p>
         <Row>

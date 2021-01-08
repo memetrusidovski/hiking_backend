@@ -49,7 +49,10 @@ export class MetricsPage extends React.Component<IMetricsPageProps, IMetricsPage
         <p>
           <Button onClick={this.getMetrics} color={isFetching ? 'btn btn-danger' : 'btn btn-primary'} disabled={isFetching}>
             <FontAwesomeIcon icon="sync" />
-            &nbsp; Refresh
+            &nbsp;
+            <Translate component="span" contentKey="health.refresh.button">
+              Refresh
+            </Translate>
           </Button>
         </p>
         <hr />
