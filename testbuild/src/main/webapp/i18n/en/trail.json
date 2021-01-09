@@ -1,0 +1,27 @@
+{
+  "blogApp": {
+    "trail": {
+      "home": {
+        "title": "Trails",
+        "createLabel": "Create a new Trail",
+        "createOrEditLabel": "Create or edit a Trail",
+        "notFound": "No Trail found"
+      },
+      "created": "A new Trail is created with identifier {{ param }}",
+      "updated": "A Trail is updated with identifier {{ param }}",
+      "deleted": "A Trail is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Trail {{ id }}?"
+      },
+      "detail": {
+        "title": "Trail"
+      },
+      "title": "Title",
+      "url": "Url",
+      "content": "Content",
+      "date": "Date",
+      "trail": "Trail",
+      "tag": "Tag"
+    }
+  }
+}

@@ -10,6 +10,10 @@
         "blog": "Blog",
         "post": "Post",
         "tag": "Tag",
+        "savedTrails": "Saved Trails",
+        "trail": "Trail",
+        "review": "Review",
+        "comments": "Comments",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

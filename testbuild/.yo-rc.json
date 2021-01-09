@@ -15,7 +15,7 @@
     "websocket": false,
     "databaseType": "sql",
     "devDatabaseType": "h2Disk",
-    "prodDatabaseType": "mysql",
+    "prodDatabaseType": "postgresql",
     "searchEngine": false,
     "messageBroker": false,
     "serviceDiscoveryType": false,
@@ -39,5 +39,5 @@
     "skipServer": false,
     "skipUserManagement": false
   },
-  "entities": ["Blog", "Post", "Tag"]
+  "entities": ["SavedTrails", "Trail", "Review", "Comments"]
 }

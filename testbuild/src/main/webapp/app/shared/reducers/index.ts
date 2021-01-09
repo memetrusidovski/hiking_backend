@@ -24,6 +24,22 @@ import post, {
 import tag, {
   TagState
 } from 'app/entities/tag/tag.reducer';
+// prettier-ignore
+import savedTrails, {
+  SavedTrailsState
+} from 'app/entities/saved-trails/saved-trails.reducer';
+// prettier-ignore
+import trail, {
+  TrailState
+} from 'app/entities/trail/trail.reducer';
+// prettier-ignore
+import review, {
+  ReviewState
+} from 'app/entities/review/review.reducer';
+// prettier-ignore
+import comments, {
+  CommentsState
+} from 'app/entities/comments/comments.reducer';
 /* jhipster-needle-add-reducer-import - JHipster will add reducer here */
 
 export interface IRootState {
@@ -40,6 +56,10 @@ export interface IRootState {
   readonly blog: BlogState;
   readonly post: PostState;
   readonly tag: TagState;
+  readonly savedTrails: SavedTrailsState;
+  readonly trail: TrailState;
+  readonly review: ReviewState;
+  readonly comments: CommentsState;
   /* jhipster-needle-add-reducer-type - JHipster will add reducer type here */
   readonly loadingBar: any;
 }
@@ -58,6 +78,10 @@ const rootReducer = combineReducers<IRootState>({
   blog,
   post,
   tag,
+  savedTrails,
+  trail,
+  review,
+  comments,
   /* jhipster-needle-add-reducer-combine - JHipster will add reducer here */
   loadingBar
 });

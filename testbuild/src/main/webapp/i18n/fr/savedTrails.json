@@ -1,0 +1,24 @@
+{
+  "blogApp": {
+    "savedTrails": {
+      "home": {
+        "title": "SavedTrails",
+        "createLabel": "Créer un nouveau Saved Trails",
+        "createOrEditLabel": "Créer ou éditer un Saved Trails",
+        "notFound": "Aucun Saved Trails trouvé"
+      },
+      "created": "Un nouveau Saved Trails a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Saved Trails avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Saved Trails avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Saved Trails {{ id }} ?"
+      },
+      "detail": {
+        "title": "Saved Trails"
+      },
+      "title": "Title",
+      "user": "User",
+      "trail": "Trail"
+    }
+  }
+}
