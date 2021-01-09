@@ -47,7 +47,7 @@
             "ownerSide": true
         }
     ],
-    "changelogDate": "20210109234331",
+    "changelogDate": "20210109234840",
     "entityTableName": "trail",
     "dto": "no",
     "pagination": "infinite-scroll",
