@@ -28,7 +28,7 @@
             "otherEntityField": "name"
         }
     ],
-    "changelogDate": "20210109235346",
+    "changelogDate": "20210110000023",
     "entityTableName": "saved_trails",
     "dto": "no",
     "pagination": "no",

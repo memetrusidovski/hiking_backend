@@ -32,7 +32,7 @@
             "otherEntityField": "id"
         }
     ],
-    "changelogDate": "20210109235348",
+    "changelogDate": "20210110000025",
     "entityTableName": "review",
     "dto": "no",
     "pagination": "no",
