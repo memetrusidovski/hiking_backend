@@ -6,7 +6,7 @@
     <!--
         Added the constraints for entity Trail.
     -->
-    <changeSet id="20210109234331-2" author="jhipster">
+    <changeSet id="20210110000237-2" author="jhipster">
         
         <addForeignKeyConstraint baseColumnNames="trail_id"
                                  baseTableName="trail_tag"
